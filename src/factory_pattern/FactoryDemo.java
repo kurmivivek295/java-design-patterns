@@ -1,24 +1,22 @@
 package factory_pattern;
 
 interface EmailSender {
-    Boolean sendEmail();
+    void sendEmail();
 }
 
 class GmailSender implements EmailSender {
 
     @Override
-    public Boolean sendEmail() {
+    public void sendEmail() {
         System.out.println("Email sent via Gmail");
-        return null;
     }
 }
 
 class OutlookSender implements EmailSender {
 
     @Override
-    public Boolean sendEmail() {
+    public void sendEmail() {
         System.out.println("Email sent via Outlook");
-        return null;
     }
 }
 
